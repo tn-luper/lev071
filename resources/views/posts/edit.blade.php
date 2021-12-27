@@ -1,4 +1,7 @@
 <!-- body内だけを表示しています。 -->
+@extends('layouts.app')
+
+@section('content')
 <body>
     <h1 class="title">編集画面</h1>
     <div class="content">
@@ -17,3 +20,4 @@
         </form>
     </div>
 </body>
+@endsection

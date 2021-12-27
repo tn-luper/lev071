@@ -18,3 +18,8 @@ Route::get('/posts/{post}/edit', 'PostController@edit');
 Route::delete('/posts/{post}', 'PostController@destroy');
 Route::put('/posts/{post}', 'PostController@update');
 Route::post('/posts', 'PostController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/categories/{category}', 'CategoryController@index');
