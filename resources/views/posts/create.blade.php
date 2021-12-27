@@ -1,9 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    @extends('layouts.app')
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
     </head>
+    
+    @section('content')
     <body>
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
@@ -30,4 +33,5 @@
         </form>
         <div class="back">[<a href="/">back</a>]</div>
     </body>
+    @endsection
 </html>

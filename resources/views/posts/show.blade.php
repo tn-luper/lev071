@@ -23,7 +23,8 @@
         <div class="content">
             <div class="content__post">
                 <h3>本文</h3>
-                <p>{{ $post->body }}</p>    
+                <p>{{ $post->body }}</p>  
+                <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
             </div>
         </div>
         <div class="footer">
